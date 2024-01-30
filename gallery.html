@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Nails | Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Dancing+Script&family=Montserrat:wght@400;700&display=swap">
+    <script src="js/navbar.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luxury Nails</h1>
+    </header>
+
+    <nav id="navbar" src="js/navbar.js"></nav>
+
+    <section>
+        <h1>Gallery</h1>
+        
+        <div class="gallery" id="dynamicGallery">
+            <!-- Images will be dynamically added here -->
+        </div>
+
+        <div id="overlay" onclick="closeOverlay()">
+            <span id="closeButton" onclick="closeOverlay()">&times;</span>
+            <img id="overlayImage" src="" alt="Enlarged Image">
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const dynamicGallery = document.getElementById('dynamicGallery');
+
+                // Example: Dynamically adding 10 images
+                for (let i = 1; i <= 16; i++) {
+                    const imageSrc = `src/nails-${i}.jpeg`;
+                    const imageAlt = `Dreamy Nail Design ${i}`;
+
+                    const image = document.createElement('img');
+                    image.src = imageSrc;
+                    image.alt = imageAlt;
+                    image.onclick = function () {
+                        openOverlay(imageSrc, imageAlt);
+                    };
+
+                    dynamicGallery.appendChild(image);
+                }
+            });
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dreamy Nail Salon. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
