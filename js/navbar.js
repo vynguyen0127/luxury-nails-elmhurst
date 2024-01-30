@@ -3,7 +3,7 @@ const navItems = [
     { text: 'Home', link: 'index.html' },
     { text: 'Services', link: 'services.html' },
     { text: 'Gallery', link: 'gallery.html' },
-    { text: 'Contact', link: '#' }
+    { text: 'Contact', link: 'contact.html' }
 ];
 
 const navbar = document.getElementById('navbar');
