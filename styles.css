@@ -285,3 +285,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        order: 0; /* Change the order for mobile */
+        width: 100%;
+    }
+}
