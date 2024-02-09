@@ -9,17 +9,24 @@
     <script src="js/navbar.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>AOS.init()</script>
     <header>
         <h1>Luxury Nails</h1>
     </header>
 
     <nav id="navbar" src="js/navbar.js"></nav>
 
+    <section>
+        <h2>To make an appointment, <a href="appointments.html">click here</a></h2>
+    </section>
     <section class="services">
         <h1>Services</h1>
-        <div class="service" id="manicures">
+        <div data-aos="zoom-in" class="service" id="manicures">
             <h2>Manicures</h2>
             <hr>
             <p class="service-name">Basic Manicure</p>
@@ -42,7 +49,7 @@
 
         <!-- Repeat the structure for additional services -->
         
-        <div class="service" id="pedicures">
+        <div data-aos="zoom-in" class="service" id="pedicures">
             <h2>Pedicures</h2>
             <hr>
             <p class="service-name">Basic Pedicure</p>
@@ -71,7 +78,7 @@
             <hr>
         </div>
 
-        <div class="service" id="kids">
+        <div data-aos="zoom-in" class="service" id="kids">
             <h2>Kids 10 & Under</h2>
             <hr>
             <p class="service-name">Kids Polish Change Toes</p>
@@ -96,7 +103,7 @@
             <hr>
         </div>
 
-        <div class="service" id="nail_enhancements">
+        <div data-aos="zoom-in" class="service" id="nail_enhancements">
             <h2>Nail Enhancements</h2>
             <hr>
             <p class="service-name">Builder Gel Fill</p>
@@ -162,7 +169,7 @@
             <p class="service-description"><hr>
         </div>
 
-        <div class="service" id="waxing">
+        <div data-aos="zoom-in" class="service" id="waxing">
             <h2>Waxing</h2>
             <hr>
             <p class="service-name">Half Leg Waxing & Up</p>
@@ -195,7 +202,7 @@
             <hr>
         </div>
 
-        <div class="service" id="extras">
+        <div data-aos="zoom-in" class="service" id="extras">
             <h2>Extra</h2>
             <hr>
             <p class="service-name">Dazzle</p>

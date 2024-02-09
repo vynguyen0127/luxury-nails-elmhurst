@@ -9,6 +9,8 @@
     <script src="js/navbar.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,7 +34,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const dynamicGallery = document.getElementById('dynamicGallery');
-
+                AOS.init()
                 // Example: Dynamically adding 10 images
                 for (let i = 1; i <= 20; i++) {
                     const imageSrc = `src/nails-${i}.jpeg`;
@@ -41,6 +43,8 @@
                     const image = document.createElement('img');
                     image.src = imageSrc;
                     image.alt = imageAlt;
+                    image.setAttribute("data-aos","zoom-in")
+                    image.setAttribute("data-aos-duration","2000")
                     image.onclick = function () {
                         openOverlay(imageSrc, imageAlt);
                     };

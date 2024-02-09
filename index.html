@@ -8,8 +8,14 @@
     <script src="js/navbar.js" defer></script>
     <script src="js/index.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <script>
+        AOS.init();
+      </script>
+
     <header>
         <h1>Luxury Nails</h1>
     </header>
@@ -17,32 +23,49 @@
     <nav id="navbar" src="js/navbar.js"></nav>
 
     <section>
-        <h2>Welcome to Our Luxury Nail Salon</h2>
-        <p>Indulge in a world of beauty and relaxation. Our skilled technicians are here to pamper you with dreamy nail services.</p>
-        <img src="src/nails-16.jpeg" alt="Dreamy Nail Salon" class="dreamy-image">
-    </section>
-
-    <!-- Gallery section -->
-    <section class="style-2"> 
-        <h2>Recent Nail Designs</h2>
+        <div data-aos="fade-right" data-aos-duration="2000"><h2>Welcome to Luxury Nails!</h2></div>
+        <div data-aos="fade-left" data-aos-duration="2000"><p>Indulge in a world of beauty and relaxation. 
+            Our skilled technicians are here to pamper you with dreamy nail services.</p></div>
         <section class="image-gallery">
             <div class="gallery-item">
-                <img src="src/nails-1.jpeg" alt="Image 1">
-                <div class="overlay"></div>
+                <div data-aos="flip-up" data-aos-duration="2000"><img src="src/nails-17.jpeg" alt="Image 1"></div>
             </div>
             <div class="gallery-item">
-                <img src="src/nails-2.jpeg"  alt="Image 2">
-                <div class="overlay"></div>
+                <div data-aos="flip-down" data-aos-duration="2000"><img src="src/nails-18.jpeg"  alt="Image 2"></div>
             </div>
             <div class="gallery-item">
-                <img src="src/nails-3.jpeg" alt="Image 3">
-                <div class="overlay"></div>
+                <div data-aos="flip-up" data-aos-duration="2000"><img src="src/nails-19.jpeg" alt="Image 3"></div>
             </div>
         </section>
     </section>
+    <hr>
+    <section class="contact">
+        <div class="contact-info">
+            <img data-aos="fade-left" data-aos-anchor="example-anchor" class="img-2" src="src/nails-3.jpeg">
+        </div>
+        <div data-aos="fade-right" data-aos-anchor="example-anchor" class="contact-form">
+            <h1>Indulge in Excellence</h1>
+            <br>
+            <span>
+                Welcome to <b>Luxury Nails</b>, where we stand out by delivering an unparalleled commitment to excellence and a passion for beauty. 
+                Located in the heart of Elmhurst, our highly skilled nail technicians are not just experts in aesthetics; 
+                they are dedicated artists crafting personalized designs in a tranquil and luxurious atmosphere. 
+                We prioritize hygiene and cleanliness, ensuring each visit provides an exceptional 
+                and pristine experience for our cherished guests.
+            </span>
+            <br>
+            <br>
+            <span>
+                At the heart of our salon's success is an unwavering commitment to delivering a superior 
+                quality of service. We use only the finest products and stay at the forefront of 
+                industry trends, ensuring our skilled technicians provide you with the best in nail artistry. 
+                Join us for an extraordinary experience where relaxation, sophistication, and exceptional 
+                care come together, creating a haven for those seeking the extraordinary in nail care.
+            </span>
+        </div>
+    </section>
 
-
-    <a class="floating-button" href="https://www.fresha.com/a/luxury-nails-elmhurst-181-illinois-83-vqnce1zw/booking">
+    <a class="floating-button" href="appointments.html">
         <b>Make an Appointment</b>
     </a>
 

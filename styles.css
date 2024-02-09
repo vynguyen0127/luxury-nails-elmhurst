@@ -32,6 +32,11 @@ nav a {
     color: #5e3939;
     font-weight: bold;
 }
+nav a:hover {
+    background-color: #846969;
+    padding: 4px;
+    border-radius: 5px;
+}
 
 
 section {
@@ -295,6 +300,13 @@ input[type="submit"]:hover {
     margin-top: 20px;
 }
 
+.img-2 {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     .contact {
         flex-direction: column;
@@ -304,5 +316,9 @@ input[type="submit"]:hover {
     .contact-form {
         order: 0; /* Change the order for mobile */
         width: 100%;
+    }
+
+    .image-gallery{
+        display: grid;
     }
 }

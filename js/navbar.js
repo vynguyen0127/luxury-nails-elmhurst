@@ -4,7 +4,7 @@ const navItems = [
     { text: 'Services', link: 'services.html' },
     { text: 'Gallery', link: 'gallery.html' },
     { text: 'Contact', link: 'contact.html' },
-    { text: 'Gift Cards', link: 'gift_cards.html'}
+    // { text: 'Gift Cards', link: 'gift_cards.html'}
 ];
 
 const navbar = document.getElementById('navbar');
