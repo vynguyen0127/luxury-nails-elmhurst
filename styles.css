@@ -2,12 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7e8e8;
+    background-color: #d2bea0;
     color: #483737;
 }
 
 header {
-    background-color: #e2b2b2;
+    background-image: linear-gradient(#8f8174, rgb(222, 163, 85));
     padding: 20px;
     text-align: center;
 }
@@ -22,14 +22,14 @@ h1 {
 nav {
     text-align: center;
     padding: 10px;
-    background-color: #f4d2d2;
+    background-color: #534335;
     font-family: 'Montserrat';
 }
 
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #5e3939;
+    color: #ffffff;
     font-weight: bold;
 }
 nav a:hover {
@@ -53,7 +53,7 @@ section {
 }
 
 footer {
-    background-color: #e2b2b2;
+    background-image: linear-gradient(#8f8174, rgb(222, 163, 85));
     padding: 10px;
     text-align: center;
 }
