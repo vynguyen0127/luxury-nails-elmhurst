@@ -22,7 +22,7 @@ h1 {
 nav {
     text-align: center;
     padding: 10px;
-    background-color: #534335;
+    background-image: linear-gradient(#8f8174, rgb(222, 163, 85));
     font-family: 'Montserrat';
 }
 
