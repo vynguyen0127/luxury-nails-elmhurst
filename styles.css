@@ -93,6 +93,10 @@ footer {
     margin-bottom: 20px;
 }
 
+#mothers-day {
+    width: max-content;
+}
+
 .gallery {
     display: grid;
     overflow-x: auto; /* Enable horizontal scrolling if needed */
@@ -347,5 +351,9 @@ input[type="submit"]:hover {
 
     .image-gallery{
         display: grid;
+    }
+
+    #mothers-day {
+        width: 90%;
     }
 }
